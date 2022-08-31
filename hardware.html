@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu primeiro site</title>
+    <meta name="description" content="Programador Front-End, Senai.">
+    <meta name="keywords" content="HTML, CSS,JavaScript, Senai">
+    <meta name="author" content="seu nome">
+    <meta name="viewport" content="Width=device-with, initial-scale=1.0">
+    <link rel="icon" href="heart-g15015073c_1920.png" type="image/png" sizes="16x16">
+</head>
+
+
+
+<body>
+     <header>
+     <nav id="menu">
+     <a href="index.html">home</a>
+     <a href="hardware.html">Cores</a>
+     <a href="celulares/cel_acessorios.html">Celulares</a>
+     <a href="Tabela.html">Tabela</a>
+     <a href="Formularios.html">Formularios</a>
+     </nav>
+     </header>
+
+     <h1>CORES</h1>
+
+     
+     
+
+ <p>Clique no botão para mudar a cor do background da tag <code>body</code>.</p>
+ <button>Mudar a cor do fundo</button>    
+ <script>
+ var btn = document.querySelector('button');
+
+         function random(number){
+         return Math.floor(Math.random()*(number+1));
+         }
+
+         btn.onclick = function (){
+         var rndCol = 'rgb('+ random(255)+','+random(255)+','+random(255)+')';
+         document.body.style.backgroundColor = rndCol;
+         }
+ </script>
+
+</body>
+</html>
